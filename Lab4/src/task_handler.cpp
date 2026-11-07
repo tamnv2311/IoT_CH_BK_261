@@ -35,6 +35,14 @@ void handleWebSocketMessage(String message)
             digitalWrite(gpio, LOW);
             Serial.printf("💤 GPIO %d OFF\n", gpio);
         }
+
+        String response = "{\"page\":\"device\",\"gpio\":";
+        response += String(gpio);
+        response += ",\"status\":\"";
+        status.toUpperCase();
+        response += status;
+        response += "\"}";
+        ws.textAll(response);
     }
     else if (doc["page"] == "setting")
     {
