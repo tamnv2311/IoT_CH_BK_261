@@ -1,0 +1,6 @@
+adafruit/Adafruit NeoPixel@^1.15.1
+PubSubClient
+DHT20
+tanakamasayuki/TensorFlowLite_ESP32@1.0.0
+LCD
+https://github.com/me-no-dev/ESPAsyncWebServer.git
